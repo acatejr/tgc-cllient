@@ -9,6 +9,7 @@ test("increments value", async () => {
   const { getByRole } = render(() => <Counter />)
   const counter = getByRole('button')
   expect(counter).toHaveTextContent("1")
+  
   await user.click(counter)
   expect(counter).toHaveTextContent("2")
 })
