@@ -1,0 +1,2 @@
+[functions]
+    include_files = ["members.json", "points.json", "winnnings.json"]
