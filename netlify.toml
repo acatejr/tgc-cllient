@@ -2,7 +2,7 @@
 
     [functions.include_files]
     external_node_modules = [
-      "module-one",
-      "module-two"
+      "members.json",
+      "points.json",
+      "winnings.json"
     ]
-    
