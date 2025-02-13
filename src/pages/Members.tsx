@@ -1,9 +1,48 @@
-import { createResource } from "solid-js";
+import { createResource } from "solid-js"
 
 const fetchMembers = async () => {
-  const response = await fetch("/members.json");
-  return response.json();
-};
+  const members =
+  [
+    {
+      "id": 1,
+      "first_name": "John",
+      "last_name": "Doe",
+      "email": "john.doe@example.com",
+      "phone": "123-456-7890"
+    },
+    {
+      "id": 2,
+      "first_name": "Jane",
+      "last_name": "Smith",
+      "email": "jane.smith@example.com",
+      "phone": "234-567-8901"
+    },
+    {
+      "id": 3,
+      "first_name": "Alice",
+      "last_name": "Johnson",
+      "email": "alice.johnson@example.com",
+      "phone": "345-678-9012"
+    },
+    {
+      "id": 4,
+      "first_name": "Bob",
+      "last_name": "Brown",
+      "email": "bob.brown@example.com",
+      "phone": "456-789-0123"
+    },
+    {
+      "id": 5,
+      "first_name": "Mike",
+      "last_name": "Smith",
+      "email": "mike.smith@example.com",
+      "phone": "567-890-1234"
+    }
+  ]
+  return members
+  // const response = await fetch("../../members.json")
+  // return response.json()
+}
 
 const Members = () => {
   const [members] = createResource(fetchMembers)

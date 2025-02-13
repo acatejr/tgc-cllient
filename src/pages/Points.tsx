@@ -1,9 +1,54 @@
 import { createSignal, createResource } from "solid-js"
 
-const fetchPoints = async () => {
-    const response = await fetch("../../points.json")
-    const data = await response.json()
+const points = [
+    {
+        "id": 1,
+        "event_id": 1,
+        "player_id": 1,
+        "points": 250
+    },
+    {
+        "id": 2,
+        "event_id": 1,
+        "player_id": 2,
+        "points": 50
+    },
+    {
+        "id": 3,
+        "event_id": 1,
+        "player_id": 3,
+        "points": 100
+    },
+    {
+        "id": 4,
+        "event_id": 2,
+        "player_id": 1,
+        "points": 10
+    },
+    {
+        "id": 5,
+        "event_id": 2,
+        "player_id": 3,
+        "points": 50
+    },
+    {
+        "id": 6,
+        "event_id": 2,
+        "player_id": 5,
+        "points": 25
+    },
+    {
+        "id": 7,
+        "event_id": 3,
+        "player_id": 4,
+        "points": 10
+    }
+]
 
+const fetchPoints = async () => {
+    // const response = await fetch("../../points.json")
+    // const data = await response.json()
+    const data = points
     let result: { player_id: number; total: number }[] = []
 
     data.reduce(function(res, value) {

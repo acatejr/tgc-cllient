@@ -1,11 +1,66 @@
 import { createSignal, createResource } from "solid-js"
 
+const winnings = [
+    {
+        "id": 1,
+        "date": "2021-01-01",
+        "event_name": "TGC 2021 Winter Classic",
+        "player_id": 1,
+        "amount": 1000
+    },
+    {
+        "id": 2,
+        "date": "2021-01-01",
+        "event_name": "TGC 2021 Winter Classic",
+        "player_id": 3,
+        "amount": 500
+    },
+    {
+        "id": 3,
+        "date": "2021-01-01",
+        "event_name": "TGC 2021 Winter Classic",
+        "player_id": 2,
+        "amount": 250
+    },
+    {
+        "id": 4,
+        "date": "2021-01-08",
+        "event_name": "A Fun Tourney",
+        "player_id": 1,
+        "amount": 10
+    },
+    {
+        "id": 5,
+        "date": "2021-01-08",
+        "event_name": "A Fun Tourney",
+        "player_id": 3,
+        "amount": 50
+    },
+    {
+        "id": 6,
+        "date": "2021-01-08",
+        "event_name": "A Fun Tourney",
+        "player_id": 5,
+        "amount": 25
+    },
+    {
+        "id": 7,
+        "date": "2021-02-28",
+        "event_name": "A Late Winter Tourney",
+        "player_id": 4,
+        "amount": 50.80
+    }
+]
+
 const fetchWinnings = async () => {
 
-    const response = await fetch("../../winnings.json")
-    const data = await response.json()
+    // const response = await fetch("../../winnings.json")
+    // const data = await response.json()
+
+    const data = winnings
     
     let result: { player_id: number; total: number }[] = []
+
 
     data.reduce(function(res, value) {
         if (!res[value.player_id]) {
