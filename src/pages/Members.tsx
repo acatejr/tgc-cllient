@@ -6,7 +6,7 @@ const fetchMembers = async () => {
 };
 
 const Members = () => {
-  const [members] = createResource(fetchMembers);
+  const [members] = createResource(fetchMembers)
 
   return (
     <div class="container mx-auto p-4 font-sans">
@@ -29,6 +29,7 @@ const Members = () => {
                 <td class="py-2 px-4 border-b text-left">{member.first_name}</td>
                 <td class="py-2 px-4 border-b text-left">{member.last_name}</td>
                 <td class="py-2 px-4 border-b text-left">{member.email}</td>
+                <td class="py-2 px-4 border-b text-left">{member.phone}</td>
               </tr>
             ))}
           </tbody>

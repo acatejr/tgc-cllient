@@ -3,21 +3,49 @@
         "id": 1,
         "date": "2021-01-01",
         "event_name": "TGC 2021 Winter Classic",
-        "name": "1st Place",
+        "player_id": 1,
         "amount": 1000
     },
     {
         "id": 2,
         "date": "2021-01-01",
         "event_name": "TGC 2021 Winter Classic",
-        "name": "2nd Place",
+        "player_id": 3,
         "amount": 500
     },
     {
         "id": 3,
         "date": "2021-01-01",
         "event_name": "TGC 2021 Winter Classic",
-        "name": "3rd Place",
+        "player_id": 2,
         "amount": 250
+    },
+    {
+        "id": 4,
+        "date": "2021-01-08",
+        "event_name": "A Fun Tourney",
+        "player_id": 1,
+        "amount": 10
+    },
+    {
+        "id": 5,
+        "date": "2021-01-08",
+        "event_name": "A Fun Tourney",
+        "player_id": 3,
+        "amount": 50
+    },
+    {
+        "id": 6,
+        "date": "2021-01-08",
+        "event_name": "A Fun Tourney",
+        "player_id": 5,
+        "amount": 25
+    },
+    {
+        "id": 7,
+        "date": "2021-02-28",
+        "event_name": "A Late Winter Tourney",
+        "player_id": 4,
+        "amount": 50.80
     }
 ]
